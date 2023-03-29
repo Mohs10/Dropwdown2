@@ -43,11 +43,11 @@ public class StartBrowser {
 		  ChromeOptions options = new ChromeOptions();
 	     // ChromeOptions.binary_location = "C:\\Program Files\\Google\\Chrome\\Application" ;
 	    //  chromeDriver = "Chromedriver.exe";
-		  options.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\");
+		  options.setBinary("C:\\Program Files\\Google\\Chrome\\Application");
 	    // driver = webdriver.Chrome(chromeDriver, options=chromeOptions)
 		 // WebDriverManager.firefoxdriver().setup();
 		  //WebDriverManager.edgedriver().setup();
-		  driver = new ChromeDriver();
+		//  driver = new ChromeDriver();
 		 // driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		  driver.manage().window().maximize();
 	  }
