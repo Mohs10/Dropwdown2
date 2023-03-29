@@ -37,9 +37,14 @@ public class StartBrowser {
 	 {
 		parentTest = extent.createTest(method.getName()); 
 	 }
-	  @BeforeClass
+	 @BeforeClass
 	  public void beforeClass() {
 		  WebDriverManager.chromedriver().setup();
+		  ChromeOptions options = new ChromeOptions();
+	     // ChromeOptions.binary_location = "C:\\Program Files\\Google\\Chrome\\Application" ;
+	    //  chromeDriver = "Chromedriver.exe";
+		  options.setBinary("C:\\Program Files\\Google\\Chrome\\Application\\");
+	    // driver = webdriver.Chrome(chromeDriver, options=chromeOptions)
 		 // WebDriverManager.firefoxdriver().setup();
 		  //WebDriverManager.edgedriver().setup();
 		  driver = new ChromeDriver();
